@@ -3,6 +3,11 @@ from nltk import word_tokenize, sent_tokenize
 from collections import Counter
 
 def cosine_distance(statement, other_statement):
+    """Calculates the cosine_distance between two statements
+    
+    statement - (str) Statement
+    other_statement - (str) Statement
+    """
     
     tokenized_statement = word_tokenize(statement.lower())
     tokenized_other_statement = word_tokenize(other_statement.lower())

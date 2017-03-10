@@ -3,6 +3,11 @@ import csv
 import json
 
 def read_corpus(fileid, extension='csv'):
+	"""Returns data from corpus given a fileid
+	
+	fileid - (str) inputs a fileid
+	extension - (str) inputs the extension of the file
+	"""
 	current_directory = os.path.dirname(__file__)
 	data_directory = os.path.join(current_directory, 'data/')
 	file_path =  os.path.join(data_directory, fileid)
